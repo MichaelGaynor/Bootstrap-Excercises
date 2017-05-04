@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Layout Practice</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style type="text/css">
+    body div{
+      border: 2px solid white;
+    }
+    .content{
+      background-color: rosybrown;
+      height: 50px;
+      margin-bottom: 10px;
+      /* width: 100%; */
+    }
+    .content-row{
+      background-color: gold;
+      /* margin-bottom: 10px; */
+    }
+    .ad{
+      background-color: plum;
+      height: 50px;
+   /*    margin-bottom: 10px; */
+    }
+  </style>
+</head>
+<body>
+  <div class="container header">
+    <div class="col-xs-12 content-row">
+    <h1>Header</h1>
+      <div class="col-md-2 col-sm-3 col-xs-12 content">
+        <p>Brand</p>
+      </div>
+      <div class="col-md-7 col-sm-6 col-xs-6 content">
+        <p>Global Nav</p>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 content">
+        <p>Tools</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container hero">
+    <div class="col-sm-12 content-row visible-sm-inline-block">
+    <h1>Hero</h1>
+      <div class="col-sm-12 content">
+        <p>Hero Feature</p>
+      </div>
+      <div class="col-sm-12 content">
+        <p>Hero Call to Action</p>
+      </div>
+    </div>
+    <div class="col-xs-12 content-row visible-xs-inline-block">
+    <h1>Hero</h1>
+      <div class="visible-xs-inline-block col-xs-12 content">
+        <p>Hero Call to Action</p>
+      </div>
+    </div>
+    <div class="col-md-9 visible-md-inline-block visible-lg-inline-block content-row">
+    <h1>Hero</h1>
+      <div class="col-md-8 content">
+        <p>Hero Feature</p>
+      </div>
+      <div class="col-md-4 content">
+        <p>Hero Call to Action</p>
+      </div>
+    </div>
+    <div class="col-md-3 visible-md-inline-block visible-lg-inline-block ad" style="height: 133px; border:2px 0 2px 2px solid white;">
+      <p>Ad</p>
+    </div>
+  </div>
+
+  <div class="container body">
+    <div class="col-xs-12 content-row hidden-md hidden-lg">
+    <h1>Body</h1>
+      <div class="col-xs-12 col-sm-9 content">
+        <p>Article Feature</p>
+      </div>
+      <div class="col-xs-12 col-sm-3 ad">
+        <p>Ad</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 content">
+        <p>Article Listing</p>
+      </div>
+    </div>
+    <div class="col-md-9 col-lg-9 content-row hidden-xs hidden-sm">
+    <h1>Body</h1>
+      <div class="col-md-4 col-lg-4 content">
+        <p>Article Feature</p>
+      </div>
+      <div class="col-md-8 col-lg-8 content">
+        <p>Article Listing</p>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-3 content-row hidden-xs">
+    <h1>Sidebar</h1>
+      <div class="col-sm-12 content">
+        <p>Sidebar Feature</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer">
+    <div class="col-xs-12 content-row">
+    <h1>Footer</h1>
+    </div>
+  </div>
+
+</body>
+</html>
